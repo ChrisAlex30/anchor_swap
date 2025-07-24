@@ -10,7 +10,6 @@ use crate::{ Offer, ANCHOR_DISCRIMINATOR};
 use super::transfer_tokens;
 
 #[derive(Accounts)]
-#[instruction(id:u64)]
 pub struct TakeOffer<'info> {
     #[account(mut)]
     pub taker : Signer<'info>,
